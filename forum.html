@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>討論區</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/b-bot.png" type="image/x-icon" >
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+
+</head>
+
+<!-- <style>
+  df-messenger {
+    --df-messenger-bot-message: #9e8585;
+    --df-messenger-button-titlebar-color: #577399;
+    --df-messenger-chat-background-color: #ffffff;
+    --df-messenger-font-color: #fff;
+    --df-messenger-send-icon: #577399;
+    --df-messenger-user-message: #577399;
+    position: absolute;
+   z-index: 1100;
+  }
+</style> -->
+
+<!-- Dialogflow Chatbot -->
+<!-- <df-messenger
+  chat-icon="https://storage.googleapis.com/cloudprod-apiai/1c89b19d-0ce6-44a2-b4e7-543f4fb6624d_x.png"
+  intent="whatmood"
+  chat-title="情感助教"
+  agent-id="784993af-7327-4a39-b11f-b293f3782427"
+  language-code="zh-tw"
+></df-messenger> -->
+
+<body>
+<!-- site header -->
+<header id="site-header" class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png">
+      </a>
+      <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="course.html">課程總覽</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="forum.html">討論區 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="questionnaire.html">問卷填寫</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">關於我們</a>
+          </li>
+          </ul>
+          <!-- <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a href="#demo" class="btn btn-primary btn-style">View Demo</a>
+              </li>
+          </ul> -->
+      </div>
+  </nav>
+</header>
+<!-- //site header -->
+
+<!-- service page breadcrumns -->
+<section class="inner-banner">
+
+</section>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-padding">
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item active" aria-current="page">討論區</li>
+    </ol>
+</nav>
+<!-- service page breadcrumns -->
+
+<!-- services page block 1 -->
+<section class="w3l-features">
+    <div class="call-w3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                    <h4 class="section-title">討論區</h4>
+                    <p class="text-center" style="font-size: 18px">本版的目的是讓各位同學提出課程學習時所遇到的各種問題。</p>
+                    <p class="text-center" style="font-size: 18px">各位也可以在這裡發表一下修課的心得與感言，及提出如何改進本課程的建議。</p>
+                    <p class="text-center" style="font-size: 18px">這也是本課程的交誼廳，聊聊工作與生活上的甘苦吧！</p>
+                </div>
+            </div>
+            <div class="row main-cont-wthree-2 mt-5">
+                <div class="col-lg-6 feature-grid-left order2 mt-lg-0 mt-sm-5 mt-4">
+                    <h4 class="title-left">[科技藝術課程] 12/26上課流程與方式</h4>
+                    <p class="text-para">請找同學合作學習，上網收集佐證資料，討論下列議題：</p>
+                    <p class="text-para">[1] 當代藝術與傳統藝術有何不同？</p>
+                    <p class="text-para">[2] 藝術與設計有何不同？</p>
+                    <p class="text-para">[3] 何謂「藝術已死」？</p>
+                    <p class="text-para">[4] 何謂「作者已死」?</p>
+                    <p class="text-para">[5] 作者、作品、觀眾之間的關係，為何可以互置?</p>
+                    <p class="text-para">請將討論結果寫在<12/26討論-當代藝術與技術>討論區，</p>
+                    <p class="text-para">每人至少針對三題發文三篇，並至少回覆三則文章，與大家分享。</p>
+                    <a href="#readmore" class="btn btn-primary btn-style mt-4">點我進入討論區</a>
+                </div>
+                <div class="col-lg-6 feature-grid-right order1">
+                    <img src="assets/images/s1.png" class="img-fluid" alt="services">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- services page block 1 -->
+
+<!-- site footer -->
+<footer id="site-footer" style="width: 100%; bottom: 0; position: absolute;">
+  <div class="bottom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 text-lg-left text-center mb-lg-0 mb-3">
+          <p class="copyright">© 2020 All Rights Reserved. Design by 
+            <a>彭麒安</a></p>
+        </div>
+        <div class="col-lg-4 align-center text-lg-right text-center">
+          <a href="#facebook" class="social-item"><span class="fa fa-facebook-f"></span></a>
+          <a href="#twitter" class="social-item"><span class="fa fa-twitter"></span></a>
+          <a href="#linkedin" class="social-item"><span class="fa fa-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- //site footer -->
+
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- //move top -->
+
+<!-- javascript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- libhtbox -->
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+<!-- particles -->
+<script src='assets/js/particles.min.js'></script>
+<script src="assets/js/script.js"></script>
+<!-- //particles -->
+
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.js"></script>
+<script>
+  $(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 10,
+      nav: true,
+      loop: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        767: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  })
+</script>
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!-- bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

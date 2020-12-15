@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>情感學伴系統(Beta版)</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/b-bot.png" type="image/x-icon" >
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+
+</head>
+
+<style>
+  df-messenger {
+    --df-messenger-bot-message: #9e8585;
+    --df-messenger-button-titlebar-color: #577399;
+    --df-messenger-chat-background-color: #ffffff;
+    --df-messenger-font-color: #fff;
+    --df-messenger-send-icon: #577399;
+    --df-messenger-user-message: #577399;
+    position: absolute;
+   z-index: 1100;
+  }
+
+</style>
+
+<script>
+  function trans() {
+
+var numbers1 = [ 'S111','劉凡齊','陳鈺昕','孫偉傑','呂昱錡','蔡永濂',
+                   '蔡逸澄','曾奕勛','黃冠洋','王詠正','黃捷',
+                 '謝宇勝','洪定承','鄭椉榕','郭柔嶔','施丞鴻',
+         '林育瑄','洪薇婷','曾曼玲','羅昱婕','游景雯',
+         '陳奕潤','許以謙','邱讌壹','張祐綱','鄭智翔',
+         '麥竣湋','吳孟霖','何冠緯','許洋浚','蕭淳云'];
+
+var numbers2 = [ '王小明','吳小美','陳小華'
+        //            '蔡逸澄','曾奕勛','黃冠洋','王詠正','黃捷',
+        //          '謝宇勝','洪定承','鄭椉榕','郭柔嶔','施丞鴻',
+        //  '林育瑄','洪薇婷','曾曼玲','羅昱婕','游景雯',
+        //  '陳奕潤','許以謙','邱讌壹','張祐綱','鄭智翔',
+         ];
+
+var Text1 = document.getElementById("textbox1");
+
+//document.getElementById("demo").innerHTML = cars[1];
+
+//var numbers1 = ['S45', 'S4', 'S9', 'S16', 'S25'];
+var someOver1 = numbers1.some(myFunction);
+
+//var numbers2 = ['S45', 'S4', 'S9', 'S16', 'S25'];
+var someOver2 = numbers2.some(myFunction);
+
+document.getElementById("demo").innerHTML = "輸入姓名是: " + Text1.value;
+
+function myFunction(value, index, array) {
+return value == Text1.value;
+}
+
+  if(someOver1==1){
+        location.href='index-1.html';
+    //alert("實驗組1");
+        }
+
+  else if(someOver2==1){
+        location.href='index-2.html';
+    //alert("實驗組2");
+        }
+
+  else {
+      location.href='index-3.html';
+      
+      //alert("對照組");
+      }
+  
+  }
+
+</script>
+
+<!-- Dialogflow Chatbot -->
+<!-- <df-messenger
+  chat-icon="https://storage.googleapis.com/cloudprod-apiai/1c89b19d-0ce6-44a2-b4e7-543f4fb6624d_x.png"
+  intent="whatmood"
+  chat-title="情感助教"
+  agent-id="9d0ec4fc-364e-4849-a287-7862934561d0"
+  language-code="zh-tw"
+></df-messenger> -->
+
+<body>
+<!-- site header -->
+<header id="site-header" class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png">
+      </a>
+      <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="course.html">課程總覽</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="forum.html">討論區</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="questionnaire.html">問卷填寫</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於我們</a>
+            </li>
+          </ul>
+          <!-- <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a href="#demo" class="btn btn-primary btn-style">View Demo</a>
+              </li>
+          </ul> -->
+      </div>
+  </nav>
+</header>
+<!-- //site header -->
+
+<!-- banner section -->
+<section id="home" class="banner">
+    <div id="banner-bg-effect" class="banner-effect"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12 col-sm-12 order-lg-first mt-lg-0 mt-4">
+                <h1 class="mb-4 title"><strong>情感式聊天機器人系統</strong>
+                </h1>
+                <p style=" font-size:24px">歡迎您使用本系統，請輸入姓名登入本系統!
+                </p>
+                <div class="mt-5">
+                  <input type="text"  placeholder="  請輸入您的姓名" id="textbox1" style="height: 52px; border-radius: 5px; width: 30% !important; "/>
+                    <input class="btn btn-primary btn-style mr-2" type="button" id="button1" onclick="trans();" value="登入系統" />	
+                </div>
+                <p id="demo"></p>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 order-first text-lg-left text-center">
+                <div>
+                    <img src="assets/images/banner-round.png" alt="" class="rounded-circle img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
+
+
+<!-- stats section -->
+<section id="stats" class="stats">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 margin-md-60">
+                <h2 class="left-title">Some of Our Company Real Facts.</h2>
+                <p class="white">Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi iure minus
+                    laboriosam placeat quia, dolorem animi. Eveniet repudiandae, iure et.</p>
+            </div>
+            <div class="col-lg-7 mt-lg-0 mt-5">
+                <div class="d-sm-flex justify-content-lg-around justify-content-between counter-main">
+                    <div class="counter">
+                        <div class="icon">
+                            <span class="fa fa-folder-open-o"></span>
+                        </div>
+                        <p class="value">385</p>
+                        <p class="title white">Projects</p>
+                    </div>
+                    <div class="counter">
+                        <div class="icon">
+                            <span class="fa fa-headphones"></span>
+                        </div>
+                        <p class="value">260</p>
+                        <p class="title white">Consultant</p>
+                    </div>
+                    <div class="counter">
+                        <div class="icon">
+                            <span class="fa fa-trophy"></span>
+                        </div>
+                        <p class="value">150</p>
+                        <p class="title white">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //stats section -->
+
+
+<!-- site footer -->
+<footer id="site-footer">
+
+  <div class="bottom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 text-lg-left text-center mb-lg-0 mb-3">
+          <p class="copyright">© 2020 All Rights Reserved. Design by 
+            <a>彭麒安</a></p>
+        </div>
+        <div class="col-lg-4 align-center text-lg-right text-center">
+          <a href="#facebook" class="social-item"><span class="fa fa-facebook-f"></span></a>
+          <a href="#twitter" class="social-item"><span class="fa fa-twitter"></span></a>
+          <a href="#linkedin" class="social-item"><span class="fa fa-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- //site footer -->
+
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- //move top -->
+
+<!-- javascript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- libhtbox -->
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+<!-- particles -->
+<script src='assets/js/particles.min.js'></script>
+<script src="assets/js/script.js"></script>
+<!-- //particles -->
+
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.js"></script>
+<script>
+  $(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 10,
+      nav: true,
+      loop: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        767: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  })
+</script>
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!-- bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
