@@ -510,7 +510,7 @@ pre {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1650px; } }
+    max-width: 1920px; } }
 
 .row {
   display: flex;
@@ -10817,7 +10817,7 @@ li.breadcrumb-item.active {
 
   .w3l-features .call-grids-w3-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 6px; }
 
   @media only screen and (max-width: 736px) {
