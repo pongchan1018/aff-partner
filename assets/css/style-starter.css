@@ -10812,7 +10812,7 @@ li.breadcrumb-item.active {
 /*-- //responsive --*/
 .w3l-features .call-grids-w3 {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
   grid-gap: 6px; }
 
   .w3l-features .call-grids-w3-1 {
